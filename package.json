@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce-monorepo",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:dashboard": "npm --prefix apps/dashboard run dev",
+    "dev:backend": "npm --prefix apps/backend run start:dev",
+    "dev:all": "concurrently \"npm run dev:web\" \"npm run dev:dashboard\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
