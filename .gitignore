@@ -2,14 +2,19 @@
 /node_modules
 **/node_modules
 
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
 # Build output
 /dist
 /build
 .next
-out
-/apps/web/.next
-/apps/dashboard/dist
-/apps/backend/dist
+/out
+apps/web/.next
+apps/dashboard/dist
+apps/backend/dist
 
 # Logs
 logs
@@ -20,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS files
+# OS system files
 .DS_Store
 Thumbs.db
 
@@ -28,7 +33,7 @@ Thumbs.db
 /coverage
 /.nyc_output
 
-# VSCode and IDEs
+# IDEs & editors
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -51,7 +56,7 @@ Thumbs.db
 .temp
 .tmp
 
-# Runtime data
+# Runtime
 pids
 *.pid
 *.seed
@@ -60,6 +65,8 @@ pids
 # Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# TypeScript
+*.tsbuildinfo
+
 # Turborepo cache
 turbo
-*.tsbuildinfo
