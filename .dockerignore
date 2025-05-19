@@ -1,5 +1,8 @@
 node_modules
 dist
+.next
 .vscode
-.git
-.env*
+.env
+*.log
+*.tsbuildinfo
+apps/**/node_modules
